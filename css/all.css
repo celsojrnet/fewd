@@ -1,0 +1,124 @@
+/* css Acme Main Page */
+
+header {
+        background-color: #c4c4c4;
+        padding: 0px -15px;
+        border: 1px solid gray;
+        margin: -10px;
+}
+img {
+  padding: 5px;
+  margin: 15px 0px -10px 0px;
+}
+a {
+  color: white;
+  font-size: 18pt;
+  font-family: Verdana;
+  text-shadow: 0px 2px 2px gray;
+  position: relative;
+  left: 1000px;
+  bottom: 70px;
+}
+button {
+  color: white;
+  background-color: blue;
+  position: relative;
+  left: 1050px;
+  bottom: 70px;
+  font-size: 20px;
+  font-family: Verdana;
+  border-radius: 5px;
+  border: 1px solid blue;
+  box-shadow: 1px blue;
+  width: 130px;
+  height: 60px;
+  text-shadow: white;
+}
+body {
+  background-image: url(https://s3.amazonaws.com/f.cl.ly/items/3G1S012t3J3l3b0h070i/background.png);
+}
+
+main {
+  background-color: white;
+  padding: 20px;
+  border-style: white;
+  border-width: 1px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px gray;
+  margin: 50px 75px 50px 75px;
+  font-family: Verdana;
+}
+nav {
+  border: 30px;
+  padding: 0px 20px;
+}
+footer {
+  text-align: center;
+  color: gray;
+}
+hr {
+  width: 88%;
+  border: 1px solid #ccc;
+}
+
+/* Products Page */
+#page {
+  color: black;
+}
+.image1 {
+  border-radius: 10px;
+  border-style: groove;
+}
+.items {
+position: relative;
+right: 5px;
+text-align: left;
+}
+.button {
+position: relative;
+left: -1010px;
+padding: 80px;
+}
+td {
+  width: 1200px;
+  padding: 20px;
+}
+th {
+  float: left;
+  box-sizing: border-box;
+  background-color: red;
+  padding: 20px 15px;
+  border-radius: 10px;
+  position: relative;
+  margin: 80px -920px;
+  color: white;
+  font-family: Verdana;
+}
+
+/* SignUp Page */
+div {
+  padding-bottom: 15px;
+  margin: 10px;
+}
+label {
+  font-size: 18px;
+  margin-left: 5px;
+
+}
+input {
+border-radius: 5px;
+border-color: pink;
+border-style: solid;
+padding: 5px;
+width: 210px;
+font-size: 14px;
+}
+#submit {
+  border-radius: 3px;
+  border-color: darkgray;
+  border-style: solid;
+  padding: 5px;
+  width: 80px;
+  background-color: lightgray;
+  font-size: 12px;
+}
