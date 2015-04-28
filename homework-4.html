@@ -1,17 +1,14 @@
+
 <script>
 /* length of the longest side of a right angle triangle */
-function longestSide (a * a) + (b * b) = (c * c) {
-  var a = parseFloat(a*a);
-  var b = parseFloat(b*b);
-  var c = parseFloat(c*c);
-  var result = Math.sqrt((a*a) + (b*b));
-  return result;
+function longestSide (a, b) {
+  var c = Math.sqrt((a*a) + (b*b));
+  return c;
 }
 var a = prompt("What is a?");
 var b = prompt("What is b?");
-var c = prompt("The longest side is:");
-var result = Math.sqrt((a*a) + (b*b));
-alert(result);
+var c = Math.sqrt((a*a) + (b*b));
+alert("The longest side is" + c);
 
 
 /* Radius of a circle */
