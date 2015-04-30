@@ -41,57 +41,55 @@ button { background-color: #58c0f5; color: white; border-radius: 3px; }
   </tr>
 </tbody></table>
 
-<script>
 
 <script>
-//Add-button
-document.querySelector("#add-button");
-function add(n, m) {
-document.textContent("#first-operand")
-  + ("#second-operand");
-  n = parseInt("#first-operand");
-  m = parseInt("#second-operand");
-  var add = n + m;
-  return add
+//grab all elements
+var num1 = document.querySelector("#first-operand");
+var num2 = document.querySelector("#sencond-operand");
+var addition = document.querySelector("#add-button");
+var subtract = document.querySelector("#subtract-button");
+var multiply = document.querySelector("#multiply-button");
+var division = document.querySelector("#divide-button");
+var result = document.querySelector("#result");
+
+//event handler function to perform adding
+function add (){
+  var one = num1.textContent;
+  var two = num2.textContent;
+  result.textContent = parseInt(one) + parseInt(two);
 }
-document.addEventListener("click", displayreturn);
+// event listener command
+addition.addEventListener = ("click", add);
 
 
-
-//subtract-button
-document.querySelector("#subtract-button");
-function subtract(n, m) {
-  n = parseInt(first-operand);
-  m = parseInt(second-operand);
-  var subtract = n - m;
-
-document.addEventListener("click", displayresult);
-  return subtract
+//event handler function to perform subtract
+function subtract (){
+  var one = num1.textContent;
+  var two = num2.textContent;
+  result.textContent = parseInt(one) - parseInt(two);
 }
+// event listener command
+subtract.addEventListener = ("click", subtract);
 
 
-//multiply-button
-document.querySelector("#multiply-button");
-function multiply(m, m) {
-  n = parseInt(first-operand);
-  m = parseInt(second-operand);
-  var multiply = n * m;
-
-document.addEventListener("click", displayresult);
-  return multiply
+//event handler function to perform multiply
+function multiply (){
+  var one = num1.textContent;
+  var two = num2.textContent;
+  result.textContent = parseInt(one) * parseInt(two);
 }
+// event listener command
+multiply.addEventListener = ("click", multiply);
 
 
-//divide-button
-document.querySelector("#divide-button");
-function divide(n, m) {
-  n = parseInt(first-operand);
-  m = parseInt(second-operand);
-  var divide = n / m;
-
-document.addEventListener("click", displayresult);
-  return divide
+//event handler function to perform division
+function divide (){
+  var one = num1.textContent;
+  var two = num2.textContent;
+  result.textContent = parseInt(one) / parseInt(two);
 }
+// event listener command
+division.addEventListener = ("click", divide);
 
 
 </script>
