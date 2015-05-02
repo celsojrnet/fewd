@@ -38,15 +38,31 @@
    var movie2 = document.querySelector("#movie2, #title2").textContent;
    var movie3 = document.querySelector("#movie3, #title3").textContent;
 
+   var movie1 = document.querySelector("#movie1, #title2").appendChild;
+   var movie2 = document.querySelector("#movie2, #title2").appendChild;
+   var movie3 = document.querySelector("#movie3, #title3").appendChild;
+
 
    var favoriteMovies = [];
    var movie1 = document.querySelector("#movie1, #title1");
    var movie2 = document.querySelector("#movie2, #title2");
    var movie3 = document.querySelector("#movie3, #title3");
 
+   var favoriteMovies = [
+     { name: 'Cool Runnings', year: 1993, url: 'http://www.imdb.com/title/tt0106611/' },
+     { name: 'Terminator 2', year: 1991, url: 'http://www.imdb.com/title/tt0103064/' },
+     { name: 'Interstellar', year: 2014, url: 'http://www.imdb.com/title/tt0816692/' }
+   ]
+
+   var favoriteMovie1 = [0];
+   var favoriteMovie2 = [1];
+   var favoriteMovie3 = [2];
+
+
    favoriteMovies.push(movie1);
    favoriteMovies.push(movie2);
    favoriteMovies.push(movie3);
+
 
    var favoriteMovies = [
        {
@@ -69,7 +85,7 @@
       }
    ]
 
-  
+
    </script>
 
  </body>
