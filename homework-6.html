@@ -13,7 +13,7 @@
      <h2>Favorite Movies</h2><hr>
    </header>
    <ul id="film">
-
+<!--
      <li id="movie1">
        <a href="http://www.imdb.com/title/tt0106611/">Cool Runnings</a> <span id="title1">(1993, 5 stars, 8 ratings)</span>
      </li>
@@ -21,7 +21,7 @@
        <a href="http://www.imdb.com/title/tt0103064/">Termminator2</a> <span id="title2">(1991, 4.4 stars, 11 ratings)</span>
      </li>
      <li id="movie3">
-       <a href="http://www.imdb.com/title/tt0816692/">Interstellar</a> <span id="title3">(2014, 3.7 satrs, 10 ratings)</span>
+       <a href="http://www.imdb.com/title/tt0816692/">Interstellar</a> <span id="title3">(2014, 3.7 satrs, 10 ratings)</span> <-->
      </li>
    </ul>
 
@@ -35,56 +35,66 @@
    //Append the span to the list item
    //Append the list item to the list
 
-   var favoriteMovies = [
-       {
-       name: 'Cool Runnings',
-       year: 1993,
-       url: 'http://www.imdb.com/title/tt0106611/',
-       ratings: [5, 5, 5, 5, 5, 5, 5, 5]
-     },
-     {
-       name: 'Terminator 2',
-       year: 1991,
-       url: 'http://www.imdb.com/title/tt0103064/',
-       ratings: [5, 4, 3, 5, 4, 5, 4, 5, 5, 5, 3]
-     },
-     {
-       name: 'Interstellar',
-       year: 2014,
-       url: 'http://www.imdb.com/title/tt0816692/',
-       ratings: [5, 3, 5, 5, 1, 2, 4, 5, 5, 2]
-      }
-   ]
-
-   function getAverage(numbers) {
-     var sum = 0;
+var favoriteMovies = [
+  {
+    name: 'Cool Runnings',
+    year: 1993,
+    url: 'http://www.imdb.com/title/tt0106611/',
+    ratings: [5, 5, 5, 5, 5, 5, 5, 5]
+  },
+  {
+    name: 'Terminator 2',
+    year: 1991,
+    url: 'http://www.imdb.com/title/tt0103064/',
+    ratings: [5, 4, 3, 5, 4, 5, 4, 5, 5, 5, 3]
+  },
+  {
+    name: 'Interstellar',
+    year: 2014,
+    url: 'http://www.imdb.com/title/tt0816692/',
+    ratings: [5, 3, 5, 5, 1, 2, 4, 5, 5, 2]
    }
+]
 
-   for (var i=0; i< favoriteMovies.length; i++) {
-     var list = document.getElementById('film');
+var list = document.querySelector("ul");
 
-     var addMovie = document.createElement('li');
-     addMovie.textContent = favoriteMovies[i].name;
+function getAverage(numbers) {
+  var sum = 0;
 
-    list.appendChild(addMovie);
+  for (var j = 0; j < numbers.length; j++) {
+    sum = sum + numbers[j];
   }
 
-    var totalRating = 0;
+  var average = Math.round((sum / numbers.length) * 10) / 10
 
-    for (var j = 0; j <favoriteMovies[i].ratings.length; j++) {
-      totalRating += favoriteMovies[i].ratings[j];
-    }
-
-    var avgRating = Math.round((totalRating / favoriteMovies[i].ratings.length) * 10) / 10
-
-    var span = document.createElement("span");
-    span.textContent = (" + movie.year + ", " + avgRating + ", favoriteMovies[i].ratings.length + "ratings");
-    list.appendChild(span);
-
-    var link = document.createElement('li');
-    link.textContent = favoriteMovies[i].url;
-    list.appendChild(link);
+  return average;
 }
+
+function createMovie(movie) {
+  var link = document.createElement("a");
+  link.setAttribute("href", movie.url)
+  link.textContent = movie.name;
+
+  var avgRating = getAverage(movie.ratings);
+
+  var span = document.createElement("span");
+  span.textContent = "(" + movie.year + ", " + avgRating + " stars, " + movie.ratings.length + " ratings)";
+
+  var movieItem = document.createElement("li");
+  movieItem.appendChild(link);
+  movieItem.appendChild(span);
+
+  return movieItem;
+}
+
+for (var i = 0; i < favoriteMovies.length; i++) {
+  var movie = favoriteMovies[i];
+
+  var newMovie = createMovie(movie);
+
+  list.appendChild(newMovie);
+}
+
    </script>
 
  </body>
