@@ -12,7 +12,8 @@
    <header>
      <h2>Favorite Movies</h2><hr>
    </header>
-   <ul>
+   <ul id="film">
+
      <li id="movie1">
        <a href="http://www.imdb.com/title/tt0106611/">Cool Runnings</a> <span id="title1">(1993, 5 stars, 8 ratings)</span>
      </li>
@@ -33,38 +34,6 @@
    //Append the anchor to the list item
    //Append the span to the list item
    //Append the list item to the list
-
-   var movie1 = document.querySelector("#movie1, #title2").textContent;
-   var movie2 = document.querySelector("#movie2, #title2").textContent;
-   var movie3 = document.querySelector("#movie3, #title3").textContent;
-
-   var movie1 = document.querySelector("#movie1, #title2").appendChild;
-   var movie2 = document.querySelector("#movie2, #title2").appendChild;
-   var movie3 = document.querySelector("#movie3, #title3").appendChild;
-
-
-   var favoriteMovies = [];
-   var movie1 = document.querySelector("#movie1, #title1");
-   var movie2 = document.querySelector("#movie2, #title2");
-   var movie3 = document.querySelector("#movie3, #title3");
-
-   var favoriteMovies = [
-     { name: 'Cool Runnings', year: 1993, url: 'http://www.imdb.com/title/tt0106611/' },
-     { name: 'Terminator 2', year: 1991, url: 'http://www.imdb.com/title/tt0103064/' },
-     { name: 'Interstellar', year: 2014, url: 'http://www.imdb.com/title/tt0816692/' }
-   ]
-
-   var favoriteMovie1 = [0];
-   var favoriteMovie2 = [1];
-   var favoriteMovie3 = [2];
-
-
-   favoriteMovies.push(movie1);
-   favoriteMovies.push(movie2);
-   favoriteMovies.push(movie3);
-
-   //var avaragerating
-
 
    var favoriteMovies = [
        {
@@ -87,8 +56,35 @@
       }
    ]
 
+   function getAverage(numbers) {
+     var sum = 0;
+   }
 
+   for (var i=0; i< favoriteMovies.length; i++) {
+     var list = document.getElementById('film');
 
+     var addMovie = document.createElement('li');
+     addMovie.textContent = favoriteMovies[i].name;
+
+    list.appendChild(addMovie);
+  }
+
+    var totalRating = 0;
+
+    for (var j = 0; j <favoriteMovies[i].ratings.length; j++) {
+      totalRating += favoriteMovies[i].ratings[j];
+    }
+
+    var avgRating = Math.round((totalRating / favoriteMovies[i].ratings.length) * 10) / 10
+
+    var span = document.createElement("span");
+    span.textContent = (" + movie.year + ", " + avgRating + ", favoriteMovies[i].ratings.length + "ratings");
+    list.appendChild(span);
+
+    var link = document.createElement('li');
+    link.textContent = favoriteMovies[i].url;
+    list.appendChild(link);
+}
    </script>
 
  </body>
