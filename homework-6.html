@@ -13,15 +13,15 @@
      <h2>Favorite Movies</h2><hr>
    </header>
    <ul id="film">
-<!--
+
      <li id="movie1">
-       <a href="http://www.imdb.com/title/tt0106611/">Cool Runnings</a> <span id="title1">(1993, 5 stars, 8 ratings)</span>
+       <a href="http://www.imdb.com/title/tt0106611/" target="_blank">Cool Runnings</a> <span id="title1">(1993, 5 stars, 8 ratings)</span>
      </li>
      <li id="movie2">
-       <a href="http://www.imdb.com/title/tt0103064/">Termminator2</a> <span id="title2">(1991, 4.4 stars, 11 ratings)</span>
+       <a href="http://www.imdb.com/title/tt0103064/" taget="_blank">Termminator2</a> <span id="title2">(1991, 4.4 stars, 11 ratings)</span>
      </li>
      <li id="movie3">
-       <a href="http://www.imdb.com/title/tt0816692/">Interstellar</a> <span id="title3">(2014, 3.7 satrs, 10 ratings)</span> <-->
+       <a href="http://www.imdb.com/title/tt0816692/" target="_blank">Interstellar</a> <span id="title3">(2014, 3.7 satrs, 10 ratings)</span>
      </li>
    </ul>
 
@@ -73,6 +73,7 @@ function getAverage(numbers) {
 function createMovie(movie) {
   var link = document.createElement("a");
   link.setAttribute("href", movie.url)
+  link.setAttribute("target", _blank)
   link.textContent = movie.name;
 
   var avgRating = getAverage(movie.ratings);
