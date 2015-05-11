@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>BLog Post</title>
+ </head>
+<body>
+  <div id="content">
+  <main>
+    <h1>The Challenges of Programming</h1>
+    <p>When you're just starting out with programming, it's easy to run into problems that make you wonder how anyone has ever managed to write a computer program. But the fact is, just about everyone else who's learned to code has had that experience and wondered the same thing, when they were starting out.
+    </p>
+      <ol>
+        <li>Thinking Like a Programmer</li>
+        <li>Compiler Error Messages</li>
+        <li>Debugging</li>
+        <li>Designing a Program</li>
+      </ol>
+      <span>I've helped teach several introductory programming classes, and there are some problems that trip up nearly every student--everything from getting started to dealing with program design.</span>
+  </main>
+</div>
+  <hr>
+
+<div>
+
+  <a class="clickLike" onclick="count" href="#" title="Like">Like</a>
+  <span class="clickLike-count">(0)</span>
+
+  <form class="comment" action="postComment.php" method="post">
+    <input id="commentBlog" type="text" value="" placeholder="Leave a comment...">
+    <input id="submitComment" type="button" value="Comment" onclick="dofunction();" />
+  </form>
+</div>
+
+</body>
+</html>
+
+<script>
+//grab all elements/querySelector
+var rateButton = document.querySelector("clicklike");
+var text = document.querySelector("#commentBlog");
+var click = document.querySelector("#submitComment");
+
+//add Like function
+function count() {
+ var rateButton = "clickLike";
+ rateButton.setAttribute("href", _blank);
+ rateButton.textContent = "count".like;
+}
+count.addEventListener = ('clickLike', count);
+
+
+//add Leave comment function
+function leaveComment() {
+  var text = "#commentBlog";
+  text.setAttribute("text");
+  text.textContent = "commentBlog";
+}
+text.addEventListener = ('#commentBlog', leaveComment);
+
+//add Comment button function
+function submitButton() {
+  var click = "#submitComment";
+  click.setAttribute("click");
+  click.onclick = submitButton;
+}
+click.addEventListener = ('#submitComment', submitButton);
+
+</script>

@@ -1,0 +1,15 @@
+<script>
+
+var myPerson = {
+  fName: null,
+  lName: null
+};
+
+myPerson.getFullName = function () {
+  return this.fName + " " + this.lName;
+}
+myPerson.sayMyName = function() {
+  return alert(this.getFullName());
+}
+
+</script>
