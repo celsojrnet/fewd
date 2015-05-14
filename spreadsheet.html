@@ -62,26 +62,41 @@ button {
 //for every <tr> in <tbody>
 //create a new <td> and append to <tr>
 
-//Add Column
-var rows = document.querySelector("tr");
+var table = document.querySelector("table tbody");
 
-function addColumn () {
+function addRow() {
+  var row = document.createElement("tr");
+  var lastRowCells = table.querySelectorAll("tr:last-child td");
+
+  for (var i = 0; i < lastRowCells.length; i++) {
+    var cell = document.createElement("td");
+
+    if (i == 0) {
+      cell.textContent = table.querySelectorAll("tr").length + 1;
+    } else {
+      cell.setAttribute("contenteditable", true);
+    }
+
+    row.appendChild(cell);
+  }
+
+  table.appendChild(row);
+}
+
+function addColumn() {
+  var rows = table.querySelectorAll("tr");
 
   for (var i = 0; i < rows.length; i++) {
-    var row = rows[i];
-    var column = document.createElement("td");
-    column.textContent = "Sweet Column"
-    row.appendChild(column);
+    var cell = document.createElement("td");
+    cell.setAttribute("contenteditable", true)
+
+    rows[i].appendChild(cell);
   }
 }
 
-var columnButton = document.querySelector("button#add-column");
-columnButton.addEventListener("click", addColumn)
-
-//Add row
-
-
-
+document.querySelector("#add-row").addEventListener("click", addRow);
+document.querySelector("#add-column").addEventListener("click", addColumn);
 
 </script>
-</body></html>
+</body>
+</html>
