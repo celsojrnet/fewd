@@ -1,7 +1,97 @@
 <style>
 
+#page {
+background-color: transparent;
+margin:auto;
+width: 90%;
+height: 700px;
+border: 1px solid #cccccc;
+}
+#header {
+margin-left: 10px;
+}
+#img1 {
+  margin-top: -45px;
+  margin-left: 92px;
+}
  #title1 {
-  background-color: blue;
+  background-color: transparent;
+  padding: 10px 20px;
+  margin-left: 40px;
+  font-size: 35px;
+  font-family: sans-serif;
+}
+.navButton {
+  position: absolute;
+  margin-left: 1000px;
+  margin-top: -25px;
+}
+#p1{
+padding: 5px;
+position: absolute;
+margin-left: 765px;
+margin-top: -24px;
+font-size: 22px;
+}
+#calendar {
+  position: absolute;
+  margin-left: 345px;
+  margin-top: -20px;
+}
+#main {
+posiion: absolute;
+margin-left: 320px;
+font-size: 14px;
+}
+.speech-bubble {
+  position: absolute;
+  margin-left: -700px;
+  margin-top: 120px;
+  border: 3px solid #cccccc;
+  border-radius: 40px;
+  padding: 5px;
+  background-color: white;
+  text-align: center;
+}
+  .speech-bubble .arrow {
+    border-style: solid;
+    position: absolute;
+}
+.persona1 {
+  border-radius: 40px;
+  position: absolute;
+  margin-left: -675px;
+  margin-top: 180px;
+  border: 2px solid #cccccc;
+  padding: 3px;
+}
+.persona2 {
+  border-radius: 40px;
+  position: absolute;
+  margin-left: -620px;
+  margin-top: 275px;
+  border: 2px solid #cccccc;
+  padding: 3px;
+}
+.persona3 {
+  border-radius: 40px;
+  position: absolute;
+  margin-left: -570px;
+  margin-top: 375px;
+  border: 2px solid #cccccc;
+  padding: 3px;
+}
+.bottom {
+    border-color: lightgray transparent transparent transparent;
+    border-width: 12px 15px 0px 50px;
+    bottom: -12px;
+}
+#map-canvas {
+width: 650px;
+height: 450px;
+position: absolute;
+margin-top: 90px;
+margin-left: 600px;
 }
 
 </style>
