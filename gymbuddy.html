@@ -6,6 +6,7 @@
 
     <script src="https://maps.googleapis.com/maps/api/js"></script>
         <script>
+
           //set up map options and function
           function initialize() {
             var pinLocation = new google.maps.LatLng(37.791, -122.401);
@@ -14,6 +15,9 @@
               center: pinLocation
             }
             var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+
+            //linking gym array with map
+
 
             //adding markers (pin location)
                 marker = new google.maps.Marker({
@@ -24,8 +28,11 @@
             });
             google.maps.event.addListener(marker, 'click', toggleBounce);
           }
-          
+
           function toggleBounce() {
+            for (var i = 0; i < obj.length; i++) {
+              obj[i];
+            }
 
             if (marker.getAnimation() != null) {
               marker.setAnimation(null);
@@ -36,11 +43,20 @@
 
           google.maps.event.addDomListener(window, 'load', initialize);
 
+          //array of gyms with api
+          var i = 0; //counter
+          var msg = ''; //message
+          var select = '{"gyms" : [' +
+          ' { "name":"Equinox", "location":"https://www.google.com/maps/place/Equinox/@37.791824,-122.401308,15z/data=!4m6!1m3!3m2!1s0x0:0x633ab9311d4cc601!2sEquinox!3m1!1s0x0:0x633ab9311d4cc601", "friend":"Peter" }, ' +
+          ' { "name":"Crunch Fitness", "location":"https://www.google.com/maps/place/Crunch/@37.788098,-122.401035,17z/data=!4m7!1m4!3m3!1s0x80858062a42ffb21:0x504564beafc11f3e!2sCrunch!3b1!3m1!1s0x80858062a42ffb21:0x504564beafc11f3e", "friend":"Allison"}, ' + '  { "name":"24 hr Fitness", "location":"https://www.google.com/maps/place/246+2nd+St,+San+Francisco,+CA+94105/@37.7858202,-122.3975,17z/data=!4m7!1m4!3m3!1s0x8085807c5e67e285:0x815f4ce331410057!2s246+2nd+St,+San+Francisco,+CA+94105!3b1!3m1!1s0x8085807c5e67e285:0x815f4ce331410057", "friend":"Eric"}]}';
 
-          function signUp() {
-            window.location='http://celsojrnet.github.io/fewd/gymbuddy-signup.html'
-          };
+          var obj = JSON.parse(select);
 
+
+        //when signUp button clicked
+        function signUp() {
+          window.location='http://celsojrnet.github.io/fewd/gymbuddy-signup.html'
+        };
 
         </script>
 
@@ -70,16 +86,15 @@
     </div>
 
 
-    <form class="dropdown" action="index.html" method="post">
+    <form id="dropdown1" action="index.html" method="post">
         <select name="gymdropdown" style="
                 position: absolute;
                 margin-top: 90px;
                 margin-left: 125px;
                 font-size: 20px;">
-          <option value="Equinox">Equinox</option>
-          <option value="Crunch">Crunch Fitness</option>
-          <option value="24Hs">24 Hour Fitness</option>
-          <option value="SportsClub">Sports Club LA</option>
+          <option value="gym">Equinox</option>
+          <option value="gym">Crunch Fitness</option>
+          <option value="gym">24 Hour Fitness</option>
         </select>
     </form>
 
@@ -90,16 +105,15 @@
              <p>Choose a Buddy:</p>
        </div>
 
-       <form class="dropdown" action="index.html" method="post">
+       <form id="dropdown2" action="index.html" method="post">
            <select name="buddydropdown" style="
                    position: absolute;
                    margin-top: 171px;
                    margin-left: -118px;
                    font-size: 20px;">
-             <option value="Peter">Peter</option>
-             <option value="Allison">Allison</option>
-             <option value="Eric">Eric</option>
-             <option value="Jason">Jason</option>
+             <option value="name">Peter</option>
+             <option value="name">Allison</option>
+             <option value="name">Eric</option>
            </select>
        </form>
 
