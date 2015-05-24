@@ -1,94 +1,5 @@
 <!DOCTYPE html>
 <html>
-<style>
-/* #page {
-background-color: transparent;
-margin:auto;
-width: 90%;
-height: 700px;
-border: 1px solid #cccccc;
-}
-#header {
-margin-left: 10px;
-}
-#img1 {
-  margin-top: -45px;
-  margin-left: 92px;
-}
- #title1 {
-  background-color: transparent;
-  padding: 10px 20px;
-  margin-left: 40px;
-  font-size: 35px;
-  font-family: sans-serif;
-}
-.navButton {
-  position: absolute;
-  margin-left: 1000px;
-  margin-top: -25px;
-}
-#p1{
-padding: 5px;
-position: absolute;
-margin-left: 765px;
-margin-top: -24px;
-font-size: 22px;
-}
-#calendar {
-  position: absolute;
-  margin-left: 345px;
-  margin-top: -20px;
-}
-#main {
-posiion: absolute;
-margin-left: 320px;
-font-size: 14px;
-}
-.speech-bubble {
-  position: absolute;
-  margin-left: -700px;
-  margin-top: 120px;
-  border: 3px solid #cccccc;
-  border-radius: 40px;
-  padding: 5px;
-  background-color: white;
-  text-align: center;
-}
-  .speech-bubble .arrow {
-    border-style: solid;
-    position: absolute;
-}
-.persona1 {
-  border-radius: 40px;
-  position: absolute;
-  margin-left: -675px;
-  margin-top: 180px;
-  border: 2px solid #cccccc;
-  padding: 3px;
-}
-.persona2 {
-  border-radius: 40px;
-  position: absolute;
-  margin-left: -620px;
-  margin-top: 275px;
-  border: 2px solid #cccccc;
-  padding: 3px;
-}
-.bottom {
-    border-color: lightgray transparent transparent transparent;
-    border-width: 12px 15px 0px 50px;
-    bottom: -12px;
-}
-#map-canvas {
-width: 650px;
-height: 450px;
-position: absolute;
-margin-top: 90px;
-margin-left: 600px;
-} */
-
-</style>
-
   <head>
     <title>gymbuddy</title>
     <link rel="stylesheet" href="gymbuddy/css.css" media="screen" type="text/css" charset="utf-8">
@@ -96,75 +7,132 @@ margin-left: 600px;
     <script src="https://maps.googleapis.com/maps/api/js"></script>
     <script src="https://maps.googleapis.com/maps/api/js"></script>
         <script>
+          // function initialize() {
+          //   var mapCanvas = document.getElementById('map-canvas');
+          //   var mapOptions = {
+          //     center: new google.maps.LatLng(37.788230, -122.403268),
+          //     zoom: 8,
+          //     mapTypeId: google.maps.MapTypeId.ROADMAP
+          //   }
+          //   var map = new google.maps.Map(mapCanvas, mapOptions)
+          //   var marker = new google.maps.Marker({
+          //   position: -122.403268
+          // }
+          // google.maps.event.addDomListener(window, 'load', initialize);
+
           function initialize() {
-            var mapCanvas = document.getElementById('map-canvas');
+            var myLatlng = new google.maps.LatLng(37.788230, -122.403268);
             var mapOptions = {
-              center: new google.maps.LatLng(37.788230, -122.403268),
-              zoom: 8,
-              mapTypeId: google.maps.MapTypeId.ROADMAP
+              zoom: 11,
+              center: myLatlng
             }
-            var map = new google.maps.Map(mapCanvas, mapOptions)
+            var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+
+            var marker = new google.maps.Marker({
+                position: myLatlng,
+                map: map,
+                title: 'Hello World!'
+            });
           }
+
           google.maps.event.addDomListener(window, 'load', initialize);
+
+
+          function signUp() {
+            window.location='gymbuddy-signup.html'
+          };
+
         </script>
 
-</head>
+    <!-- // <script> -->
 
+    <!-- // var button2 = document.querySelector('button2');
+    // var anchor = document.createElement('anchor');
+    //
+    // anchor.setAttribute('href', 'https://gomockingbird.com/mockingbird/#cjjp3j5/OHehrs');
+    // anchor.textContent = 'Sign Up';
+
+//*enter zipcode and make it show up on map
+    //button2.appendChild(anchor);
+
+      // function button2Clicked {
+        //    document.getElementById("button2");
+     //}
+//*create a list of gyms[array] with interection with map and show its locations by pindroppig where it's locateded at.
+//*create a list of buddies [array] to link with gyms, where shows who belongs to the same network at that loction. -->
+
+  <!-- </script> -->
+
+</head>
+<body>
   <h2 id="title1">Gym Buddy - The easy way to find a workout buddy!</h2>
 
-  <body id="page">
+
     <div id="map-canvas"></div>
   <header>
       <img src="http://i437.photobucket.com/albums/qq94/middleman777/muscle_penguin.png" id= "img1" alt="" align="left" width="250" height="150" />
 
-<div class="navButton">
+<div class="nav">
         <nav>
-        <button type="button" value="send" name="button">Log In</button>
-        <button type="button" value="send" name="button">Sign Up</button>
+        <button id= "button1" type="button" value="send" name="button">Log In</button>
+        <button id= "button2" type="button" value="send" name="button" onclick="window.location='gymbuddy-signup.html';">Sign Up</button>
       </nav>
-</div>
+
     </header>
 
-  <div id="content">
+
     <main>
-      <div id="p1">
-      <p>
-        Looking for a workout <b>buddy</b>? Pick a date and search!
-      </p>
-      <div id="calendar">
-        <label for="pickDate"></label>
-        <input type="date" name="calendar" />
-        <input type="submit" value="Submit" />
-      </div>
-
-    <div class="speech-bubble">
-      <div class="arrow bottom right"></div>
-      See what people are saying about GymBuddy...
+      <div id="search-button">
+      <input type="search" placeholder="zip code">
+      <input type="submit" value="submit">
     </div>
 
-    <div class="persona1">
-      <p>
-        <i>Allison</i> at Crunch "..."
-      </p>
-    </div>
-    <div class="persona2">
-      <p>
-        <i>Peter</i> at Equinox "..."
-      </p>
-    </div>
-    <div class="persona3">
-      <p>
-        <i>Jessica</i> at 24 hours "..."
-      </p>
-    </div>
+
+    <form class="dropdown" action="index.html" method="post">
+        <select name="gymdropdown" style="
+                position: absolute;
+                margin-top: 90px;
+                margin-left: 125px;
+                font-size: 20px;">
+          <option value="Equinox">Equinox</option>
+          <option value="Crunch">Crunch Fitness</option>
+          <option value="24Hs">24 Hour Fitness</option>
+          <option value="SportsClub">Sports Club LA</option>
+        </select>
+    </form>
+
+       <div id="title2">
+           <p>Select your gym:</p>
+       </div>
+       <div id="title3">
+             <p>Choose a Buddy:</p>
+       </div>
+
+       <form class="dropdown" action="index.html" method="post">
+           <select name="buddydropdown" style="
+                   position: absolute;
+                   margin-top: 171px;
+                   margin-left: -118px;
+                   font-size: 20px;">
+             <option value="Peter">Peter</option>
+             <option value="Allison">Allison</option>
+             <option value="Eric">Eric</option>
+             <option value="Jason">Jason</option>
+           </select>
+       </form>
+
+       <img src="http://us.123rf.com/450wm/3dalia/3dalia1406/3dalia140600493/29567857-3d-render-of-a-penguin-lifting-weights.jpg" id="img2" align="left" width="110" height="110" margin-top="165px"  alt style="
+                  position: absolute;
+                  margin-top: 195px;
+                  margin-left: -250px;
+                  padding:1px;
+                  border:1px solid #021a40;
+                  background-color:#E5297F;" />
 
     </main>
 
-  </div>
   <div class="footer">
     <footer></footer>
   </div>
-
   </body>
-  </div>
 </html>

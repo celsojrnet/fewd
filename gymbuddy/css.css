@@ -1,11 +1,8 @@
 <style>
-
-#page {
-background-color: transparent;
-margin:auto;
-width: 90%;
-height: 700px;
-border: 1px solid #cccccc;
+body {
+margin: 0;
+padding: 0;
+border: 2px solid #000000;
 }
 #header {
 margin-left: 10px;
@@ -21,70 +18,57 @@ margin-left: 10px;
   font-size: 35px;
   font-family: sans-serif;
 }
-.navButton {
+#title2 {
+  font-size: 20px;
   position: absolute;
-  margin-left: 1000px;
+  margin-left: 326px;
+  margin-top: 67px;
+}
+#title3 {
+  font-size: 20px;
+  position: absolute;
+  margin-left: 80px;
+  margin-top: 150px;
+}
+.nav {
+  position: absolute;
+  margin-left: 1080px;
   margin-top: -25px;
 }
-#p1{
-padding: 5px;
-position: absolute;
-margin-left: 765px;
-margin-top: -24px;
-font-size: 22px;
+#button1 {
+  width: 75px;
+  height: 25px;
+  border-radius: 5px;
+  font-size: 14px;
 }
-#calendar {
-  position: absolute;
-  margin-left: 345px;
-  margin-top: -20px;
+#button2 {
+  width: 75px;
+  height: 25px;
+  border-radius: 5px;
+  font-size: 14px;
 }
 #main {
 posiion: absolute;
 margin-left: 320px;
 font-size: 14px;
 }
-.speech-bubble {
+input[type=search] {
+  width: 120px;
+  height: 25px;
+  border-radius: 5px;
+  font-size: 14px;
+}
+input[type=submit] {
+  width: 75px;
+  height: 25px;
+  border-radius: 5px;
+  font-size: 14px;
+  background-color: transparent;
+}
+#search-button {
   position: absolute;
-  margin-left: -700px;
-  margin-top: 120px;
-  border: 3px solid #cccccc;
-  border-radius: 40px;
-  padding: 5px;
-  background-color: white;
-  text-align: center;
-}
-  .speech-bubble .arrow {
-    border-style: solid;
-    position: absolute;
-}
-.persona1 {
-  border-radius: 40px;
-  position: absolute;
-  margin-left: -675px;
-  margin-top: 180px;
-  border: 2px solid #cccccc;
-  padding: 3px;
-}
-.persona2 {
-  border-radius: 40px;
-  position: absolute;
-  margin-left: -620px;
-  margin-top: 275px;
-  border: 2px solid #cccccc;
-  padding: 3px;
-}
-.persona3 {
-  border-radius: 40px;
-  position: absolute;
-  margin-left: -570px;
-  margin-top: 375px;
-  border: 2px solid #cccccc;
-  padding: 3px;
-}
-.bottom {
-    border-color: lightgray transparent transparent transparent;
-    border-width: 12px 15px 0px 50px;
-    bottom: -12px;
+  margin-left: 1035px;
+  margin-top: 50px;
 }
 #map-canvas {
 width: 650px;
@@ -93,5 +77,27 @@ position: absolute;
 margin-top: 90px;
 margin-left: 600px;
 }
-
+.signUp {
+  font-size: 20px;
+  padding: 5px;
+}
+#input1, #input2 {
+  padding: 3px;
+  border-radius: 10px;
+}
+#page2 {
+  font-size: 24px;
+}
+#submit {
+  font-size: 12px;
+  border-radius: 5px;
+  margin-left: 310px;
+}
+#body2 {
+  border: 1px solid black;
+  padding-left: 25px;
+  padding-bottom: 10px;
+  margin-right: 1000px;
+  border-radius: 5px;
+}
 </style>

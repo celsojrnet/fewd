@@ -1,0 +1,52 @@
+<!DOCTYPEhtml>
+<html>
+  <head>
+    <title>sign up page</title>
+    <link rel="stylesheet" href="gymbuddy/css.css" media="screen" type="text/css" charset="utf-8">
+  </head>
+
+  <script>
+  function signUp(userName) {
+    var userName;
+    userName = document.getElementById('input1');
+    return signUp;
+    document.appendChild('userName');
+  }
+  document.addEventListener('click', signUp);
+
+  function signUp(passWord) {
+    var passWord;
+    passWord = document.getElementById('input2');
+    return signUp;
+    document.appendChild('passWord');
+  }
+  document.addEventListener('click', signUp);
+
+  function submit() {
+    var submit;
+    submit = document.getElementById('submit');
+    return submit;
+    document.appendChild('userName', 'passWord');
+  }
+  document.addEventListener('click', submit);
+
+  </script>
+
+  <body id="body2">
+    <header>
+      <h3 id="page2">GymBuddy Sign Up</h3>
+    </header>
+
+    <div class="signUp">
+      <label>Create a username</label>
+      <input id="input1" type="text" name="userName" value="" required placeholder="username">
+    </div>
+
+    <div class="signUp">
+      <label>Create a password</label>
+      <input id="input2" type="password" name="passWord" value="" required placeholder="password">
+    </div>
+    <button id="submit"  type="submit" name="button">Submit</button>
+
+  </body>
+</html>
