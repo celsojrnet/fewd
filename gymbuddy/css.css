@@ -29,7 +29,7 @@ padding: 0;
   font-size: 24px;
   font-family: sans-serif;
   position: absolute;
-  margin-left: 500px;
+  margin-left: 530px;
 }
 #title2 {
   font-size: 20px;
@@ -66,7 +66,16 @@ padding: 0;
   font-size: 14px;
   position: absolute;
   margin-left: 1160px;
-}
+  }
+  #button4 {
+    position: absolute;
+    margin-left: 590px;
+    margin-top: 508px;
+    width: 120px;
+    height: 35px;
+    border-radius: 5px;
+    font-size: 18px;
+  }
 #main {
 posiion: absolute;
 margin-left: 320px;
@@ -137,6 +146,7 @@ margin-left: 600px;
 }
 #save {
   position: absolute;
+  margin-left: 120px;
   padding: 5px;
   margin-top: 10px;
   border-radius: 5px;
