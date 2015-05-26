@@ -6,29 +6,13 @@
   </head>
 
   <script>
-  function signUp(userName) {
-    var userName;
-    userName = document.getElementById('input1');
-    return signUp;
-    document.appendChild('userName');
-  }
-  document.addEventListener('click', signUp);
 
-  function signUp(passWord) {
-    var passWord;
-    passWord = document.getElementById('input2');
-    return signUp;
-    document.appendChild('passWord');
-  }
-  document.addEventListener('click', signUp);
+  var submit = document.getElementById('submit');
 
-  function submit() {
-    var submit;
-    submit = document.getElementById('submit');
-    return submit;
-    document.appendChild('userName', 'passWord');
+  function buttonClicked() {
+    alert('Form Submitted!');
   }
-  document.addEventListener('click', submit);
+  document.addEventListener('click', buttonClicked);
 
   </script>
 

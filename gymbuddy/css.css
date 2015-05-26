@@ -163,7 +163,7 @@ margin-left: 600px;
 }
 #bud1 {
   position: absolute;
-  margin-left: 1033px;
+  margin-left: 1025px;
   margin-top: 301px;
   border-radius: 3px;
   font-size: 14px;
@@ -200,10 +200,19 @@ margin-left: 600px;
 }
 #view-buddy {
   position: absolute;
-  margin-left: 100px;
-  margin-top: 325px;
+  margin-left: 105px;
+  margin-top: 322px;
   border-radius: 5px;
+  font-size: 12px;
+}
+#tips {
+  position: absolute;
+  margin-left: 92px;
+  margin-top: 378px;
   font-size: 14px;
+  border-style: inset;
+  padding: 3px;
+  border-radius: 3px;
 }
 
 
