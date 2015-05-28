@@ -7,17 +7,19 @@
 
   <script>
 
-  var submit = document.getElementById('submit');
+    var save = document.getElementById('submit');
 
-  function buttonClicked() {
-    alert('Form Submitted!');
-  }
-  document.addEventListener('click', buttonClicked);
+    function  buttonClicked() {
+      alert('Form Submitted!');
+      e.preventDefault();
+    }
+
+    document.addEventListener('click', buttonClicked);
 
 //adding the "beforeunload" event
   function setup() {
     var textInput;
-    textInput = document.getElementById('submit');
+    textInput = document.querySelector('#submit');
     textInput.signUp();
   }
   window.addEventListener('DOMContentLoaded', setup, false);
@@ -29,7 +31,7 @@
   });
 
   </script>
-  
+
 
   <body id="body2">
     <header>
