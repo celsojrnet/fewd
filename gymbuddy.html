@@ -19,6 +19,7 @@
             //linking gym array with map
 
 
+
             //adding markers (pin location)
                 marker = new google.maps.Marker({
                 map: map,
@@ -63,6 +64,13 @@
           window.location='http://celsojrnet.github.io/fewd/gymbuddy-profile.html'
         };
 
+        $(document).ready(function(){
+   $('.dropdown1 a.dropdown1-toggle').click(function(){
+       location.href = this.href;
+   });
+});
+
+
         </script>
 
 </head>
@@ -75,7 +83,7 @@
 
       <div id="map-canvas"></div>
 
-      <button id= "button1" type="button" value="send" name="button">Log In</button>
+      <button id= "button1" type="button" value="send" name="button" >Log In</button>
 
       <button id= "button2" type="button" value="send" name="button" onclick="window.location='http://celsojrnet.github.io/fewd/gymbuddy-signup.html';">Sign Up</button>
 
@@ -88,11 +96,12 @@
 
 
     <form id="dropdown1" action="index.html" method="post">
-        <select name="gymdropdown" style="
+        <select  name="gymdropdown" style="
                 position: absolute;
                 margin-top: 90px;
                 margin-left: 125px;
-                font-size: 20px;">
+                font-size: 20px;" />
+       <option value='' selected='selected'></option>
           <option value="gym">Equinox</option>
           <option value="gym">Crunch Fitness</option>
           <option value="gym">24 Hour Fitness</option>
@@ -124,7 +133,7 @@
                   margin-left: -250px;
                   padding:1px;
                   border:1px solid #021a40;
-                  background-color:#E5297F;" />
+                  background-color:#E5297F;">
 
       <img src="http://thumbs.dreamstime.com/t/d-penguin-lifting-red-heavy-weight-concept-white-background-left-side-angle-view-53977355.jpg" id="img9" align="left" width="110" height="115" alt style="
                  position: absolute;
