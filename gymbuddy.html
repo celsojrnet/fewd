@@ -18,7 +18,7 @@
         function dropPin() {
           var selectedGym = $(this).val();
           var latLng = gyms[selectedGym];
-          
+
           var pinLocation = new google.maps.LatLng(latLng[0], latLng[1]);
 
           marker = new google.maps.Marker({
@@ -66,6 +66,18 @@
 
           google.maps.event.addDomListener(window, 'load', initialize);
 
+
+
+          //when signUp button clicked
+            function signUp() {
+                window.location='http://celsojrnet.github.io/fewd/gymbuddy-signup.html'
+            };
+
+          //when profile button clicked
+             function  profile() {
+              window.location='http://celsojrnet.github.io/fewd/gymbuddy-profile.html'
+            };
+
           //local storage
           // var gyms = ['equinox', 'crunch', 'twentyfourhour'];
           // localStorage.setItem('gyms', JSON.stringify(gyms));
@@ -81,17 +93,17 @@
           // ' { "name":"Crunch Fitness", "location":"https://www.google.com/maps/place/Crunch/@37.788098,-122.401035,17z/data=!4m7!1m4!3m3!1s0x80858062a42ffb21:0x504564beafc11f3e!2sCrunch!3b1!3m1!1s0x80858062a42ffb21:0x504564beafc11f3e", "friend":"Allison"}, ' + '  { "name":"24 hr Fitness", "location":"https://www.google.com/maps/place/246+2nd+St,+San+Francisco,+CA+94105/@37.7858202,-122.3975,17z/data=!4m7!1m4!3m3!1s0x8085807c5e67e285:0x815f4ce331410057!2s246+2nd+St,+San+Francisco,+CA+94105!3b1!3m1!1s0x8085807c5e67e285:0x815f4ce331410057", "friend":"Eric"}]}';
 
           // var obj = JSON.parse(select);
-
-
-        //when signUp button clicked
-        function signUp() {
-          window.location='http://celsojrnet.github.io/fewd/gymbuddy-signup.html'
-        };
-
-        //when profile button clicked
-        function  profile() {
-          window.location='http://celsojrnet.github.io/fewd/gymbuddy-profile.html'
-        };
+        //
+        //
+        // //when signUp button clicked
+        // function signUp() {
+        //   window.location='http://celsojrnet.github.io/fewd/gymbuddy-signup.html'
+        // };
+        //
+        // //when profile button clicked
+        // function  profile() {
+        //   window.location='http://celsojrnet.github.io/fewd/gymbuddy-profile.html'
+        // };
 
 //         $(document).ready(function(){
 //    $('.dropdown1 a.dropdown1-toggle').click(function(){
