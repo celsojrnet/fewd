@@ -16,18 +16,18 @@
   document.addEventListener('click', buttonClicked);
 
   //adding the "beforeunload" event
-    function setup() {
-      var textInput;
-      textInput = document.getElementById('save');
-      //textInput.signUp();
-    }
-    window.addEventListener('DOMContentLoaded', setup, false);
-
-    window.addEventListener('beforeunload', function(event) {
-      var message = 'You have changes that have not been saved...';
-      (event || window.event).returnValue = message;
-      return message;
-    });
+    // function setup() {
+    //   var textInput;
+    //   textInput = document.getElementById('save');
+    //   //textInput.signUp();
+    // }
+    // window.addEventListener('DOMContentLoaded', setup, false);
+    //
+    // window.addEventListener('beforeunload', function(event) {
+    //   var message = 'You have changes that have not been saved...';
+    //   (event || window.event).returnValue = message;
+    //   return message;
+    // });
 
   </script>
 
