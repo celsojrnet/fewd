@@ -66,17 +66,42 @@ footer {
 
     <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+     <script>
+
+     $(function () {
+       $('#name').hide().slideDown();
+       var $h1 = $('h1');
+       $h1.hide().each(function(index) {
+         $(this).delay(700 * index).fadeIn(700);
+       });
+     });
+
+     $(function () {
+       $('#p').hide().slideDown();
+       var $p = $('p');
+       $p.hide().each(function(index) {
+         $(this).delay(700 * index).fadeIn(700);
+       });
+     });
+
+
+
+     $(function () {
+       $('.list').hide().slideDown();
+       var $li = $('li');
+       $li.hide().each(function(index) {
+         $(this).delay(700 * index).fadeIn(700);
+       });
+     });
+
+     </script>
 
 </head>
 
 <body>
   <header>
     <img src="https://pbs.twimg.com/profile_images/468996156207267840/JJj4Vzed.jpeg"  id="img" width="200" />
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script>
-
-    </script>
 
 <div id="name">
   <h1>Celso Rodrigues</h1>
@@ -93,7 +118,7 @@ footer {
   </div>
   <div class="p">
     <p>
-      <i class="em em-earth_americas"></i> <b>Where to find me {on the web}</b>
+      <i class="em em-earth_americas"></i> <b>Where to find me {on the web & connect!}</b>
     </p>
   </div>
 
