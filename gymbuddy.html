@@ -14,7 +14,6 @@
           twentyfourhour: [37.785,-122.397]
         }
 
-
         function dropPin() {
           var selectedGym = $(this).val();
           var latLng = gyms[selectedGym];
@@ -78,40 +77,6 @@
               window.location='http://celsojrnet.github.io/fewd/gymbuddy-profile.html'
             };
 
-          //local storage
-          // var gyms = ['equinox', 'crunch', 'twentyfourhour'];
-          // localStorage.setItem('gyms', JSON.stringify(gyms));
-          //
-          // var storedGyms = JSON.parse(localStorage.getItem('gyms'));
-
-
-          //array of gyms with api
-          // var i = 0; //counter
-          // var msg = ''; //message
-          // var select = '{"gyms" : [' +
-          // ' { "name":"Equinox", "location":"https://www.google.com/maps/place/Equinox/@37.791824,-122.401308,15z/data=!4m6!1m3!3m2!1s0x0:0x633ab9311d4cc601!2sEquinox!3m1!1s0x0:0x633ab9311d4cc601", "friend":"Peter" }, ' +
-          // ' { "name":"Crunch Fitness", "location":"https://www.google.com/maps/place/Crunch/@37.788098,-122.401035,17z/data=!4m7!1m4!3m3!1s0x80858062a42ffb21:0x504564beafc11f3e!2sCrunch!3b1!3m1!1s0x80858062a42ffb21:0x504564beafc11f3e", "friend":"Allison"}, ' + '  { "name":"24 hr Fitness", "location":"https://www.google.com/maps/place/246+2nd+St,+San+Francisco,+CA+94105/@37.7858202,-122.3975,17z/data=!4m7!1m4!3m3!1s0x8085807c5e67e285:0x815f4ce331410057!2s246+2nd+St,+San+Francisco,+CA+94105!3b1!3m1!1s0x8085807c5e67e285:0x815f4ce331410057", "friend":"Eric"}]}';
-
-          // var obj = JSON.parse(select);
-        //
-        //
-        // //when signUp button clicked
-        // function signUp() {
-        //   window.location='http://celsojrnet.github.io/fewd/gymbuddy-signup.html'
-        // };
-        //
-        // //when profile button clicked
-        // function  profile() {
-        //   window.location='http://celsojrnet.github.io/fewd/gymbuddy-profile.html'
-        // };
-
-//         $(document).ready(function(){
-//    $('.dropdown1 a.dropdown1-toggle').click(function(){
-//        location.href = this.href;
-//    });
-// });
-
-
         </script>
 
 </head>
@@ -121,9 +86,18 @@
             margin-left: 71px;
             margin-top: 35px;">
   <header>
-    <h2 id="header1">Gym Buddy - The easy way to find a workout buddy!</h2>
-      <img src="http://i437.photobucket.com/albums/qq94/middleman777/muscle_penguin.png" id= "img1" alt="" align="left" width="250" height="150" />
+    <div id="header1" style="padding: 10px 20px;
+    margin-left: 40px;
+    font-size: 25px;
+    font-family: sans-serif;
+    color: lightseagreen; " >
+    <h2>Gym Buddy - The easy way to find a workout buddy!</h2>
+  </div>
     </header>
+
+    <img src="http://i437.photobucket.com/albums/qq94/middleman777/muscle_penguin.png" id="img1" width="250" height="150"
+               style=" margin-left: 65px; position: absolute;
+                  margin-top:-41px; " />
 
       <div id="map-canvas"></div>
 
@@ -143,7 +117,7 @@
         <select  id="gym-dropdown" style="
                 position: absolute;
                 margin-top: 90px;
-                margin-left: 125px;
+                margin-left: 460px;
                 font-size: 20px;" />
        <option value='' selected='selected'></option>
           <option value="equinox">Equinox</option>
@@ -163,7 +137,7 @@
            <select name="buddydropdown" style="
                    position: absolute;
                    margin-top: 171px;
-                   margin-left: -135px;
+                   margin-left: 178px;
                    font-size: 20px;">
              <option value="name">Peter</option>
              <option value="name">Allison</option>
@@ -199,7 +173,7 @@
                  margin-left: 44px;
                  padding:1px;
                  border:1px solid #021a40;
-                 background-color:#E5297F;" />
+                 background-color:#E5297F;">
 
 
   </body>
