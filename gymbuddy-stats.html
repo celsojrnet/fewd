@@ -11,6 +11,18 @@
     <script>
 
     $(function () {
+      $('#header4').hide().fadeIn();
+      var $h1 = $('h1');
+      $h1.hide().each(function(index) {
+        $(this).delay(700 * index).fadeIn(700);
+      });
+      $h1.on('click', function() {
+        $(this).fadeOut(700);
+      });
+    });
+
+
+    $(function () {
       $('#stats').hide().slideDown();
       var $li = $('li');
       $li.hide().each(function(index) {
@@ -35,20 +47,23 @@
     </script>
   </head>
 
-  <header id="#header4">
+  <header id="header4">
   <h1>Celso's FEWD-30 Stats</h1>
   </header>
-  <body>
+  <body id="body3">
     <ul id="stats">
       <li><i class="em em-roller_coaster"></i> 2 1/2 Months</li>
+
       <li><i class="em em-cherries"></i></i> 11 Weeks </li>
+
       <li><i class="em em-trophy"></i> 21 days</li>
+
       <li><i class="em em-sos"></i> 63 hours (in class)</li>
-      <li><i class="em em-pencil"></i> 88 hours (outside class)</li>
+      <li><i class="em em-pencil"></i> 90 hours (outside class)</li>
       <li><i class="em em-eyes"></i> 42 (extra) cups of coffee</li>
-      <li><i class="em em-scream_cat"></i> 132 (extra) non-working hours at General Assembly</li>
+      <li><i class="em em-scream_cat"></i> 140 (extra) non-working hours at GA</li>
       <li><i class="em em-clapper"></i> Fin!</li>
-      <li>click here <i class="em em-arrow_forward"></i></li>
+      <li><i class="em em-arrow_forward"></i> click here to Exit</li>
     </ul>
 
 
