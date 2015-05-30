@@ -1,9 +1,5 @@
 <style>
-#body1 {
-margin: 0;
-padding: 0;
 
-}
 #body2 {
   border-style: inset;
   padding-left: 25px;
@@ -15,11 +11,11 @@ padding: 0;
 }
 #img1 {
   margin-top: -45px;
-  margin-left: 92px;
+  margin-left: 67px;
 }
  #header1 {
   padding: 10px 20px;
-  margin-left: 40px;
+  margin-left: 12px;
   font-size: 35px;
   font-family: sans-serif;
   color: lightseagreen;
@@ -43,13 +39,13 @@ padding: 0;
 #title2 {
   font-size: 20px;
   position: absolute;
-  margin-left: 326px;
+  margin-left: 301px;
   margin-top: 67px;
 }
 #title3 {
   font-size: 20px;
   position: absolute;
-  margin-left: 80px;
+  margin-left: 35px;
   margin-top: 150px;
 }
 #button1 {
@@ -200,14 +196,14 @@ margin-left: 600px;
 }
 #view-buddy {
   position: absolute;
-  margin-left: 105px;
+  margin-left: 67px;
   margin-top: 322px;
   border-radius: 5px;
   font-size: 12px;
 }
 #tips {
   position: absolute;
-  margin-left: 92px;
+  margin-left: 43px;
   margin-top: 378px;
   font-size: 14px;
   border-style: inset;
@@ -216,10 +212,26 @@ margin-left: 600px;
 }
 #stats {
   list-style-type: none;
-  font-size: 30px;
+  font-size: 40px;
+  color: navy;
+  font-family: monospace;
+  position: absolute;
+  margin-top: 145px;
+  margin-left: 250px;
+  border-radius: 5px;
+  padding: 5px;
 }
 #header4 {
-  font-size: 35px;
+  font-size: 32px;
+  font-family: monospace;
+  font-style: oblique;
+  color: white;
+  position: absolute;
+  margin-left: 320px;
+  filter: invert(90%);
+}
+#body3 {
+  background-image: url('http://netdna.webdesignerdepot.com/uploads/2014/05/featured@wdd2x.jpg');
 }
 
 
