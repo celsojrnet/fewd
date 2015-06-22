@@ -1,0 +1,104 @@
+/*Body*/
+#wrapper {
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+  float: left;
+}
+
+/*left column css*/
+.header1 {
+width: 51.376147%;
+padding-top: 20px;
+padding-right: 55px;
+line-height: 2.0;
+font-family: Arial;
+}
+.title1 {
+  font-size: 25px;
+  padding-left: 25px;
+  font-family: Archer Bold Italic;
+  color: red;
+}
+.hr1 {
+  margin-left: 20px;
+  margin-right: -85px;
+}
+#list {
+  list-style-type: square;
+  width: 160px;
+  font-family: Arial;
+  font-size: 14px;
+}
+ul > li {
+  color: blue;
+  size: 12px;
+  font-size: 16px;
+  list-style-image: url('http://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Ski_trail_rating_symbol-blue_square.svg/15px-Ski_trail_rating_symbol-blue_square.svg.png');
+padding-left: 7px;
+}
+a:hover {
+  color: black;
+}
+a:link {
+  text-decoration: none;
+}
+a {
+  color: rgb(19, 181, 156);
+}
+.p1 {
+font-size: 11px;
+margin-left: 25px;
+font-family: Arial;
+margin-bottom: -15px;
+}
+#socialMedia {
+margin-left: 26px;
+}
+.fb {
+margin-left: 35px;
+margin-top: -32px;
+}
+.t {
+margin-left: 71px;
+margin-top: -32px;
+}
+
+
+/*Right column css*/
+.header2 {
+  position: absolute;
+  width: 56.443418%;
+  padding-top: 41px;
+  margin-left: 100px;
+}
+.title2 {
+  font-size: 25px;
+  font-family: Archer Bold Italic;
+  color: gray;
+  margin-top: -10px;
+  margin-bottom: 18px;
+
+}
+.p2 {
+  font-size: 20px;
+  font-family: Arial;
+  color: rgb(19, 181, 156);
+  padding-bottom: 2px;
+  padding-top: 5px;
+}
+.p3 {
+font-family: Arial;
+font-size: 15px;
+line-height: 1.5;
+}
+.photo {
+  padding-right: 10px;
+  margin-top: 3px;
+}
+.p4 {
+font-family: Arial;
+font-size: 18px;
+color: rgb(19, 181, 156);
+padding: 1px;
+}
