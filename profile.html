@@ -9,6 +9,17 @@
     font-size: 20px;
     padding: 5px;
   }
+  #hdr {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 370px;
+    padding: 0;
+    margin: 0;
+  }
   #bio {
     font-size: 22px;
     margin-left: 5px;
@@ -31,6 +42,7 @@
   main {
     background-color: transparent;
     margin: 0 auto;
+    margin-top: 360px;
     padding: 20px;
     border-radius: 10px;
     padding: 10px 20px;
@@ -63,7 +75,8 @@
   }
   #img {
     border-radius: 100%;
-    box-shadow: 6px 6px 6px 6px #B67A7A;
+    /*box-shadow: 6px 6px 6px 6px #B67A7A;*/
+    margin-top: 15px;
   }
 footer {
     text-align: center;
@@ -114,6 +127,7 @@ footer {
 
 <body>
   <header>
+    <div id="hdr">
     <img src="https://pbs.twimg.com/profile_images/468996156207267840/JJj4Vzed.jpeg"  id="img" width="200" />
 
 <div id="name">
@@ -122,7 +136,7 @@ footer {
 <div id="subtitle">
   <h2><b>{Front End Web Developer}</b></h2>
 </div>
-
+</div>
   </header>
 
   <a href="http://www.escolacriatividade.com/wp-content/uploads/2011/12/CSS.jpg"></a>
