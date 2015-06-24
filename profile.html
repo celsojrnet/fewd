@@ -16,7 +16,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 370px;
+    height: 243px;
     padding: 0;
     margin: 0;
   }
@@ -42,7 +42,7 @@
   main {
     background-color: transparent;
     margin: 0 auto;
-    margin-top: 360px;
+    margin-top: 285px;
     padding: 20px;
     border-radius: 10px;
     padding: 10px 20px;
@@ -58,7 +58,7 @@
   #name {
     font-family: sans-serif;
     color: rgb(180, 70, 70);
-    font-size: 21px;
+    font-size: 25px;
     text-shadow: -2px -1px #575252;
     float: left;
     margin-left: 50px;
@@ -114,7 +114,15 @@ footer {
      <script>
 
      $(function () {
-       $('#p').hide().slideDown();
+       $('#name').hide().slideDown();
+       var $name = $('#name');
+       $name.hide().each(function(index) {
+         $(this).delay(700 * index).fadeIn(700);
+       });
+     });
+
+     $(function () {
+       $('.p').hide().slideDown();
        var $p = $('p');
        $p.hide().each(function(index) {
          $(this).delay(500 * index).fadeIn(500);
@@ -156,7 +164,7 @@ footer {
     <div id="bio">
     <p>I recently completed a 10 week <b><i>Front End Web Development</i></b> program and Am ready to kick off my new career path as a <b><i>Jr. Front End/UI Dev</i></b>.,
     feeling excited to expand my knowledge and experience in this rapidly growing global tech community, for greater opportunities. The combination of my accolades as well as a diverse experience will greatly contribute as a positive asset. Being an optimistic person, with a great sense of humor, responsible, professional, creative, loyal, always open for new ideas and challenges - would certainly add to it!
-    <p>I currently hold in the position of <i>EdTech Ops Associate</i> at
+    <p>I currently hold the position of <i>EdTech Ops Associate</i> at
       <a href="https://generalassemb.ly/" target="_blank">General Assembly</a>// This profile page is regularly being updated... Be sure to check back soon<i class="em em-bangbang"></i></p>
     </p>
   </div>
