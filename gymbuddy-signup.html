@@ -19,12 +19,11 @@
     document.addEventListener('click', buttonClicked);
 
 //adding the "beforeunload" event
-  function setup() {
+  function setUp() {
     var textInput;
     textInput = document.querySelector('#submit');
-    textInput.signUp();
   }
-  window.addEventListener('DOMContentLoaded', setup, false);
+  window.addEventListener('DOMContentLoaded', setUp, false);
 
   window.addEventListener('beforeunload', function(event) {
     var message = 'You have changes that have not been saved...';
