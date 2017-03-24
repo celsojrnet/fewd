@@ -43,6 +43,9 @@
   position: absolute;
   margin-left: 940px;
 }
+#button1:hover {
+  cursor: pointer;
+}
 #button2 {
   width: 75px;
   height: 25px;
@@ -50,6 +53,9 @@
   font-size: 14px;
   position: absolute;
   margin-left: 1050px;
+}
+#button2:hover {
+  cursor: pointer;
 }
 #button3 {
   width: 75px;
@@ -59,6 +65,9 @@
   position: absolute;
   margin-left: 1160px;
   }
+#button3:hover {
+  cursor: pointer;
+  }
   #button4 {
     position: absolute;
     margin-left: 590px;
@@ -67,6 +76,9 @@
     height: 35px;
     border-radius: 5px;
     font-size: 18px;
+  }
+#button1:hover {
+  cursor: pointer;
   }
 #main {
 posiion: absolute;
